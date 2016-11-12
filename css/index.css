@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	}
+ul{
+	list-style:none;
+	}
+a{
+	text-decoration:none;
+	}
+.clear{
+	clear:both;
+	}
+body{
+	font-family:arial;
+	}
+.inner{
+	width:1000px;
+	margin:0 auto;
+	}
+header{
+	height:110px;
+	}
+#one{
+	padding:100px 0;
+	background-image:linear-gradient(45deg,#8bbf75 5%, #51a49a 30%,#4468c0 100%);
+	text-align:center;
+	
+	}
+#two{
+	padding:100px 0 130px;
+	}
+#two .left{
+	width:50%;
+	float:left;
+	
+	}
+#two .right{
+	width:50%;
+	float:right;
+	}
+.right h2{
+	line-height:53px;
+	color:#3f84a3;
+	font-size:35px;
+	font-weight:normal;
+	padding-bottom:28px;
+	position:relative;
+	}
+.right h2:before{
+	content:'';
+	width:160px;
+	height:1px;
+	background-color:#4984a2;
+	position:absolute;
+	left:0;
+	bottom:0;
+	}
+.right p{
+	line-height:32px;
+	padding-top:28px;
+	font-size:14px;
+	}
+footer{
+	height:186px;
+    background-image:linear-gradient(45deg,#8bbf75 5%, #51a49a 30%,#4468c0 100%);
+
+	}
+.logo{
+	float:left;
+	font-size:50px;
+	}
+.logo span{
+	font-family:"FontAwesome";
+	color:#498ba3;
+	margin-right:21px;
+	font-size:50px;
+	}
+.logo a{
+	font-size:38px;
+	color:#558cab;
+	line-height:110px;
+	}
+nav{
+	float:right;
+	}
+#one span{
+	font-family:FontAwesome;
+	font-size:80px;
+	color:#fff;
+	animation:shine 3s ease infinite;
+	}
+@keyframes shine {
+	0%{
+		text-shadow:0 0 10px rgba(255,255,255,0.5);
+		}
+	50%{
+		text-shadow:0 0 30px #fff;
+		}
+	100%{
+		text-shadow:0 0 10px rgba(255,255,255,0.5);
+		}
+	}
+#one h1{
+	font-size:38px;
+	color:#fff;
+	font-weight:normal;
+	line-height:60px;
+	}
+#one h1 a{
+	border-bottom:1px #fff dotted;
+	color:#fff;
+	position:relative;
+	}
+#one h1 a:before{
+	content:'';
+	position:absolute;
+	left:0;
+	top:100%;
+	width:100%;
+	height:1px;
+	border-bottom:1px #fff dotted;
+	transition:all 0.5s;
+	opacity:0;
+	}
+
+#one h1 a:hover:before{
+	opacity:1;
+	top:0;
+	}
+#one p{
+	font-size:20px;
+	color:#fff;
+	line-height:40px;
+	padding-top:14px;
+	padding-bottom:34px;
+	}
+#one .btn{
+	border:1px #fff solid;
+	border-radius:4px;
+	padding:0 45px;
+	height:50px;
+	display:inline-block;
+	text-transform:uppercase;
+	line-height:50px;
+	font-size:20px;
+	color:#fff;
+	position:relative;
+	transition:all 0.5s;
+	outline:none;
+
+	}
+#one .btn:hover{
+	padding:0 80px;
+	background-color:rgba(255,255,255,0.5);
+	}
+#one .btn:before{
+	content:'';
+	width:1px;
+	height:100px;
+	background-color:#fff;
+	position:absolute;
+	left:50%;
+	top:51px;
+	
+	}
+
+.left li{
+	border:1px #78b4b7 solid;
+	display:inline-block;
+	text-align:center;
+	margin:40px;
+	padding:30px;
+	border-radius:6px;
+	transform:rotate(45deg);
+	transition:all 0.5s;
+	}
+.left li:hover{
+	background-color:#33aed7;
+	}
+
+ .left a{
+	font-family:FontAwesome;
+	font-size:80px;
+	width:80px;
+	height:80px;
+	line-height:80px;
+	display:inline-block;
+	text-align:center;
+	transform:rotate(-45deg);
+	transition:all 0.5s;
+	}
+
+
+.left li:first-child a{
+	color:#c1e792;
+	}
+.left li:first-child a:hover{
+    transform:rotate(-45deg) scale(1.2);
+	}
+.left li:nth-child(2) a{
+	color:#8adda9;
+	}
+.left li:nth-child(2) a:hover{
+	transform:rotate(315deg) ;
+
+	}
+.left li:nth-child(2) a:hover{
+	
+	}
+.left li:nth-child(3) a{
+	color:#6bd3c8;
+	font-size:70px;
+	}
+.left li:nth-child(3) a:hover{
+	transform:rotate(-45deg) skew(45deg,0);
+	}
+.left li:nth-child(4) a{
+	color:#5badd3;
+	}
+.left li:nth-child(4) a:hover{
+	transform:rotate(90deg) scale(1.2);
+	}
+.left li:nth-child(5) a{
+	color:#4a88d3;
+	}
+.left li:nth-child(5) a:hover{
+	transform:rotate(-45deg) scale(0.8);
+	}
+.left li:nth-child(6) a{
+	color:#6b88e6;
+	}
+.left li:nth-child(6) a:hover{
+	transform:rotate(-45deg) translateY(-20px);
+	}
+.left li a:hover{
+	color:#fff;
+	text-shadow: 0 0 50px #fff;
+	}
+footer{
+	text-align:center;
+	}
+.flink{
+	padding-top:50px;
+	padding-bottom:24px;
+	}
+.flink li{
+	display:inline-block;
+	}
+.flink a{
+	font-family:FontAwesome;
+	color:#a5d2cd;
+	padding:0 13px;
+	font-size:25px;
+	display:inline-block;
+	transition:all 0.3s;
+	}
+.flink a:hover{
+	transform:scale(1.2);
+	color:#fff;
+	}
+
