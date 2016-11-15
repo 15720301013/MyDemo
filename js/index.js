@@ -61,7 +61,7 @@ $("#run").hover(function(){//鼠标经过时停止动画
 		}
 	},1000);
 	
-}).trigger("mouseleave");    //选定run 出发鼠标移开事件
+}).trigger("mouseleave");    //选定run 触发鼠标移开事件
 })
 function change(index){
 		$("li").eq(index).css("background-color","brown").siblings().css("background-color","")
