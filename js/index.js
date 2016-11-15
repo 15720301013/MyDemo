@@ -59,7 +59,7 @@ $("#run").hover(function(){//鼠标经过时停止动画
 		if(index==4){
 			index=0;
 		}
-	},1000);
+	},2000);
 	
 }).trigger("mouseleave");    //选定run 触发鼠标移开事件
 })
