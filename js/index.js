@@ -1,5 +1,5 @@
 $(function(){	
-	var index=0;
+	var index=1;
 	var timer;         //定时器
 	$("img:first").show();     //展示图片第一个
 	$("li:first").css("background-color","brown"); //索引收个设置样式
