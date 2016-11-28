@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MyH5Page</title>
+<link rel="shortcut icon" href="http://www.runoob.com/favicon.ico" type="image/x-icon" >
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+	$(function(){
+		//搜索框获取焦点
+		$(".search input").focus(function(){
+			$(this).val("");
+		}).blur(function(){    //失去焦点
+			$(this).val("Search");
+		});
+		var date=new Date();
+		var localDate=date.toLocaleDateString();
+		$("time").text(localDate);
+		$(".items").hide();//手风琴效果
+		$(".items:first").show();
+		$(".sidebar li a").click(function(){
+			if($(this).next().is(":hidden")){
+				$(".sidebar .items").slideUp();
+				$(this).next().slideDown();
+			}
+		});
+	})
+</script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <header>
+        <div class="logo"><a href="#"><h2>LogoIcon</h2></a></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">nav1</a></li>
+            <li><a href="#">nav2</a></li>
+            <li><a href="#">nav3</a></li>
+            <li><a href="#">nav4</a></li>
+        </ul>
+        <form class="search">
+            <input type="text" value="Search">
+        </form>
+    </nav>
+    <div class="main">
+        <article>
+        	<section>
+        		<hgroup>
+                  <h3>Title1</h3>
+                  <h5><time></time> Showamge</h5>
+             	</hgroup>
+        		<div id="run"> 
+			<ol>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ol>
+			<div class="box">
+			    <img src="images/1.jpg">
+				<img src="images/2.jpg">
+				<img src="images/3.jpg">
+				<img src="images/4.jpg">		
+			</div>					
+				</div>
+        	</section>
+        	<section>
+        		<hgroup>
+                  <h3>Title2</h3>
+                  <h5><time>May 8, 2011</time> Description</h5>
+             	</hgroup>
+             <div class="bg_img"><img src="images/bg_img.jpg"></div>
+             <p>Ability to work independently, mature and resourceful．A person with ability plus flexibility should apply.
+　　				A stable personality and high sense of responsibility are desirable.Work well with a multi-cultural and diverse work force.
+　　				Bright, aggressive applicants.Ambitious attitude essential．Initiative, independent and good communication skill     
+　　				Willing to work under pressure with leardership quality．Mature, self-motivated and strong interpersonal skills. Energetic, fashion-minded person. 
+			　　With a pleasant mature attitude. Strong determination to succeed. Ability to work well with others. 
+			　　Highly-motivated and reliable person with excellent health and pleasant personality.  
+			　　The ability to initiate and operate independently. Be highly organized and effecient. 
+			　　Willing to learn and progress.Good presentation skills. 
+             </p>
+             <video src="swf/Compress.MP4" controls autoplay ></video>
+             <audio src="swf/music.mp3" ></audio>
+        	</section>           
+        </article>
+        <aside>
+            <div class="sidebar">
+                 <h4>Sidebar</h4>
+                 <ul>
+                    <li>
+                     	<a href="#">aside1</a>
+                     	<div class="items">
+                     		<span>label1</span>
+                     		<span>label1</span>
+                     		<span>label1</span>
+                     		<span>label1</span>
+                     	</div>                    	
+                     	<a href="#">aside2</a>
+                     	<div class="items">
+                     		<span>label2</span>
+                     		<span>label2</span>
+                     		<span>label2</span>
+                     		<span>label2</span>
+                     	</div>       
+                     	<a href="#">aside3</a>
+                     	<div class="items">
+                     		<span>label3</span>
+                     		<span>label3</span>
+                     		<span>label3</span>
+                     		<span>label3</span>
+                     	</div>       
+                     </li>
+                 </ul>
+            </div>
+            <div class="flickr"><h4>Flickr</h4></div>
+            
+        </aside>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        <p>Copyright 2016 lenovo. All Rights Reserved.<br>  2015 - 2016</p>
+    </footer>
+</div>
+
+</body>
+</html>
