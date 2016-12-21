@@ -1,0 +1,25 @@
+/**
+ * Created by hxsd on 2016/6/2.
+ *
+ * 工厂方法：将对象的创建，集中一个地方
+ *
+ * 设计模式之一
+ *
+ * 设计模式 - Group of four - GOF模式(四人bang) - 《23种设计模式》
+ */
+function mantouFactory(){
+    var mantou = {
+        name:"杂粮馒头"
+    };
+
+    return mantou;
+}
+
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
+console.log("想吃馒头：" + mantouFactory().name);
